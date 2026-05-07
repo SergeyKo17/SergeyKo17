@@ -1,21 +1,29 @@
-# Сергей Коломийчук
+# Sergey Kolomiichuk
 
-Go backend-разработчик. За плечами — 10 лет в промышленной автоматизации,
-где цена ошибки высока. В разработку пришёл осознанно: Go выбрал за предсказуемость,
-строгую типизацию и культуру простого кода.
+Go backend developer. 10 лет в промышленной автоматизации (SCADA, ПЛК) —
+перешёл в разработку осознанно: Go резонирует с инженерным подходом к надёжности.
+
+Прошёл курс Яндекс.Практикум, тимлидил команду 10+ человек в реальном проекте.
+Пишу на Хабре о Go и разработке.
 
 ## Стек
 
-Go · Gin · PostgreSQL · SQLx · Redis · MinIO · JWT  
-Prometheus · Grafana · Docker · GitHub Actions · Testify · Testcontainers
+Go · Gin · PostgreSQL · SQLx · Redis · MinIO · JWT · Viper · Zap · Goose  
+Prometheus · Grafana · Scalar · Testify · Testcontainers  
+Docker · Docker Compose · GitHub Actions
 
 ## Проекты
 
-**REST API + Telegram-бот** (Яндекс.Развитие)  
-Корпоративный сервис: запись на услуги, мероприятия, интеграция с Яндекс.Формами,
-хранение файлов через MinIO, метрики, OAS3-документация.  
-Тимлид команды 10+ человек: архитектурные решения, код-ревью, синхронизация с PM и фронтендом.  
-`Go` `Gin` `PostgreSQL` `Redis` `MinIO` `Prometheus` `Grafana` `Docker` `GitHub Actions`
+### REST API + Telegram-бот (Яндекс.Развитие)
+Backend корпоративного Telegram-бота: запись на услуги, отслеживание заявок,
+интеграция с Яндекс.Формами и MinIO.  
+Тимлид команды: архитектурные решения, код-ревью, взаимодействие с PM и фронтендом.  
+`Go` `Gin` `PostgreSQL` `SQLx` `Redis` `MinIO` `JWT` `Viper` `Zap` `Goose`  
+`Prometheus` `Grafana` `Scalar` `Testify` `Testcontainers` `Docker` `Docker Compose` `GitHub Actions`
+
+### Subscription Service
+CRUDL REST API сервиса подписок. Layered архитектура, Mockery, Swagger.  
+`Go` `PostgreSQL` `Docker`
 
 ## Статьи на Хабре
 
@@ -24,5 +32,5 @@ Prometheus · Grafana · Docker · GitHub Actions · Testify · Testcontainers
 
 ## Контакты
 
-Telegram: @SergeyEn123  
+Telegram: [@SergeyEn123](https://t.me/SergeyEn123)  
 Email: sr.kolomiichuk@yandex.com
