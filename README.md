@@ -34,4 +34,6 @@ CRUDL REST API сервиса подписок. Layered архитектура, 
 
 Telegram: [@SergeyEn123](https://t.me/SergeyEn123)  
 Email: sr.kolomiichuk@yandex.com
+
+
 [![LeetCode Stats](https://leetcard.jacoblin.cool/s_kolomiichuk)](https://leetcode.com/s_kolomiichuk)
