@@ -8,7 +8,7 @@ Go backend developer. 10 лет в промышленной автоматиза
 
 ## Стек
 
-Go · Gin · PostgreSQL · SQLx · Redis · MinIO · JWT · Viper · Zap · Goose  
+Go · Gin · PostgreSQL · Redis · MinIO · JWT · Viper · Zap · Goose  
 Prometheus · Grafana · Scalar · Testify · Testcontainers  
 Docker · Docker Compose · GitHub Actions
 
@@ -29,6 +29,7 @@ CRUDL REST API сервиса подписок. Layered архитектура, 
 
 - [Опыт тимлида в команде джунов](https://habr.com/ru/articles/1001706/)
 - [Метрики, трейсинг и инструменты для Go](https://habr.com/ru/articles/1024854/)
+- [Публичный мок АА в Яндексе: опыт, который не заменит никакая подготовка](https://habr.com/ru/articles/1059542/)
 
 ## Канал
 Веду канал про Go — пишу выводы из реальных задач, интересные решения и на что стоит обращать внимание в реализации.  
