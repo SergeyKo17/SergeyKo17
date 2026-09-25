@@ -1,41 +1,49 @@
 # Sergey Kolomiichuk
 
-Go backend developer. 10 лет в промышленной автоматизации (SCADA, ПЛК) —
-перешёл в разработку осознанно: Go резонирует с инженерным подходом к надёжности.
+Go backend developer. 10 years in industrial automation (SCADA, PLC) before moving to software.
 
-Координировал работу команд в коммерческих проектах: контроль реализации бизнес-логики, код-ревью, закрытие технического долга.
-Пишу на Хабре о Go и разработке.
+I work on backends where the interesting part is not the handler: asynchronous processing
+through queues, integration with external APIs that fail, media storage, rate limiting,
+and knowing what the service does when a dependency is down.
 
-## Стек
+`Go` `PostgreSQL` `Redis` `NATS JetStream` `MinIO` `gRPC` `REST API` `Docker` `Prometheus` `Grafana` `GitHub Actions`
 
-Go · Gin · PostgreSQL · Redis · MinIO · JWT · Viper · Zap · Goose  
-Prometheus · Grafana · Scalar · Testify · Testcontainers  
-Docker · Docker Compose · GitHub Actions
+## Work
 
-## Проекты
+**[Linka](https://github.com/Linka-masterskaya/zip-backend)** — commercial REST API + AI worker.
+Text-to-speech generation runs through a NATS JetStream queue with an audio bank that
+deduplicates repeated phrases; media lives in MinIO, rate limiting is done in Redis with
+Lua scripts. I also set up the deployment pipeline and review code.
 
-### REST API + Telegram-бот (Яндекс.Развитие)
-Backend корпоративного Telegram-бота: запись на услуги, отслеживание заявок,
-интеграция с Яндекс.Формами и MinIO.  
-Командная роль: архитектурные решения, код-ревью, взаимодействие с PM и фронтендом, финальный рефакторинг.  
-`Go` `Gin` `PostgreSQL` `SQLx` `Redis` `MinIO` `JWT` `Viper` `Zap` `Goose`  
-`Prometheus` `Grafana` `Scalar` `Testify` `Testcontainers` `Docker` `Docker Compose` `GitHub Actions`
+**[Yandex.Razvitie](https://github.com/yandex-development-1-team/go)** — REST API + Telegram bot,
+Jan — Apr 2026. Backend for a corporate bot: service booking and request tracking,
+Yandex.Forms webhook integration, files in MinIO, JWT auth. Layered architecture,
+integration tests on Testcontainers, metrics in Prometheus.
 
-### Subscription Service
-CRUDL REST API сервиса подписок. Layered архитектура, Mockery, Swagger.  
-`Go` `PostgreSQL` `Docker`
+## Projects
 
-## Статьи на Хабре
+**[tamper](https://github.com/SergeyKo17/tamper)** — gRPC fault-injection proxy.
+Sits between services and injects faults into live traffic: failures and data corruption,
+at call level and at single messages inside a stream. It knows no protobuf schemas — it
+relays a call as a bidirectional stream and works with message bytes, so it attaches to
+any service without code generation. YAML config with hot reload, TLS on both sides.
 
-- [Опыт тимлида в команде джунов](https://habr.com/ru/articles/1001706/)
-- [Метрики, трейсинг и инструменты для Go](https://habr.com/ru/articles/1024854/)
-- [Публичный мок АА в Яндексе: опыт, который не заменит никакая подготовка](https://habr.com/ru/articles/1059542/)
+**[jot](https://github.com/SergeyKo17/jot)** — MCP memory server for AI agents.
+Four tools, one binary, zero config.
 
-## Канал
-Веду канал про Go — пишу выводы из реальных задач, интересные решения и на что стоит обращать внимание в реализации.  
+## Writing
+
+About Go on Habr, in Russian:
+[metrics and tracing](https://habr.com/ru/articles/1024854/) ·
+[a public mock interview at Yandex](https://habr.com/ru/articles/1059542/) ·
+[leading a team of juniors](https://habr.com/ru/articles/1001706/)
+
+Telegram channel about Go — conclusions from real tasks and what to watch for
+in implementation.
+
 [![Telegram](https://img.shields.io/badge/Telegram-prod--logs-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/prodlogs)
 
-## Контакты
+## Contacts
 
 Telegram: [@SergeyEn123](https://t.me/SergeyEn123)  
 Email: sr.kolomiichuk@yandex.com
